@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210215 21:24:04.560" rpa="false">
+<suite id="s1" name="Radio" source="C:\Estudos\AutomacaoTestes\Robot\QANinja\tests\radio.robot">
+<test id="s1-t1" name="Selecionando por ID">
+<kw name="Nova Sessao" library="base" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210215 21:24:04.701" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20210215 21:24:04.701" endtime="20210215 21:24:08.539"></status>
+</kw>
+<status status="PASS" starttime="20210215 21:24:04.701" endtime="20210215 21:24:08.539"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url}/radios</arg>
+</arguments>
+<msg timestamp="20210215 21:24:08.540" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com//radios'</msg>
+<status status="PASS" starttime="20210215 21:24:08.540" endtime="20210215 21:24:08.931"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>movies</arg>
+<arg>cap</arg>
+</arguments>
+<msg timestamp="20210215 21:24:08.934" level="INFO">Selecting 'cap' from radio button 'movies'.</msg>
+<status status="PASS" starttime="20210215 21:24:08.933" endtime="20210215 21:24:08.992"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>movies</arg>
+<arg>cap</arg>
+</arguments>
+<msg timestamp="20210215 21:24:08.992" level="INFO">Verifying radio button 'movies' has selection 'cap'.</msg>
+<status status="PASS" starttime="20210215 21:24:08.992" endtime="20210215 21:24:09.005"></status>
+</kw>
+<kw name="Fecha Sessao" library="base" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210215 21:24:09.324" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210215 21:24:09.006" endtime="20210215 21:24:09.324"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210215 21:24:09.325" endtime="20210215 21:24:11.420"></status>
+</kw>
+<status status="PASS" starttime="20210215 21:24:09.006" endtime="20210215 21:24:11.420"></status>
+</kw>
+<status status="PASS" starttime="20210215 21:24:04.701" endtime="20210215 21:24:11.420" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Selecionando por Value">
+<kw name="Nova Sessao" library="base" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210215 21:24:11.420" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20210215 21:24:11.420" endtime="20210215 21:24:15.158"></status>
+</kw>
+<status status="PASS" starttime="20210215 21:24:11.420" endtime="20210215 21:24:15.158"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url}/radios</arg>
+</arguments>
+<msg timestamp="20210215 21:24:15.159" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com//radios'</msg>
+<status status="PASS" starttime="20210215 21:24:15.159" endtime="20210215 21:24:15.515"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>movies</arg>
+<arg>guardians</arg>
+</arguments>
+<msg timestamp="20210215 21:24:15.516" level="INFO">Selecting 'guardians' from radio button 'movies'.</msg>
+<status status="PASS" starttime="20210215 21:24:15.516" endtime="20210215 21:24:15.558"></status>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<arguments>
+<arg>movies</arg>
+<arg>guardians</arg>
+</arguments>
+<msg timestamp="20210215 21:24:15.559" level="INFO">Verifying radio button 'movies' has selection 'guardians'.</msg>
+<status status="PASS" starttime="20210215 21:24:15.558" endtime="20210215 21:24:15.592"></status>
+</kw>
+<kw name="Fecha Sessao" library="base" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210215 21:24:15.895" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210215 21:24:15.593" endtime="20210215 21:24:15.895"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210215 21:24:15.895" endtime="20210215 21:24:17.988"></status>
+</kw>
+<status status="PASS" starttime="20210215 21:24:15.592" endtime="20210215 21:24:17.988"></status>
+</kw>
+<status status="PASS" starttime="20210215 21:24:11.420" endtime="20210215 21:24:17.988" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210215 21:24:04.560" endtime="20210215 21:24:17.988"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Radio">Radio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

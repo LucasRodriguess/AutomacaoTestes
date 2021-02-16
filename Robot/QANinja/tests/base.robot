@@ -8,6 +8,7 @@ ${url}              https://training-wheels-protocol.herokuapp.com/
 Nova Sessao
     Open Browser                    ${url}      chrome
 Fecha Sessao
+    Capture Page Screenshot
     Close Browser   
 
     
