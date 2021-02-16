@@ -11,6 +11,9 @@ Acessando o endereço e logando no site
     Input Text              ${email.login}              ${login.ok}
     Input Password          ${senha.login}              ${senha.ok}
     Click Element           ${bot.login}
+    Sleep                   2
+
+    Page Should Contain     Get the Student Developer Pack
 
 Acessando o endereço e logando com dados inválidos
     [tags]      login.nok      
@@ -19,12 +22,16 @@ Acessando o endereço e logando com dados inválidos
     Input Password          ${senha.login}              ${senha.nok}
     Click Element           ${bot.login}
 
+    Page Should Contain     Incorrect username or password.
+
 Acessa o site e criar um novo repositório
     [tags]      diretorio
     Go To                   ${url}/login
     Input Text              ${email.login}              ${login.ok}
     Input Password          ${senha.login}              ${senha.ok}
     Click Element           ${bot.login}
+    Sleep                   2
+    Page Should Contain     Get the Student Developer Pack
     #Click Element           css:summary[class='Header-link']
     Click Element           ${sinal.+}
     Click Element           ${novo.repositorio}
